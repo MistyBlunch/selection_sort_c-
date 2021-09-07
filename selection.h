@@ -13,20 +13,20 @@ void swapp(T &a, T &b) {
 
 
 template <typename T>
-void print(T* arr, T size) {
-  for(T i=0; i<size; i++)
+void print(T* arr, int size) {
+  for(int i=0; i<size; i++)
     cout << arr[i] << endl;
 }
 
 
 template <typename T>
-void selection_sort(T *arr, T size) {
-  T id_selected;
+void selection_sort(T *arr, int size) {
+  int id_selected;
 
-  for(T i=0; i<size; i++) {
+  for(int i=0; i<size; i++) {
     id_selected = i;
 
-    for(T j=i; j<size; j++) 
+    for(int j=i; j<size; j++) 
       if(arr[id_selected] > arr[j])
         id_selected = j;
       
